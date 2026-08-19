@@ -15,3 +15,26 @@ GitHub.
 ## Project Folder Rules
 - Keep project files organized and clearly named.
 - The project folder structure is set up in Stage 02.
+
+## Data Storage
+
+Stage 05 implements a reproducible storage layer using environment-driven paths.
+
+### Folder Structure
+
+- `data/raw/` stores raw data in CSV format.
+- `data/processed/` stores processed data in Parquet format.
+
+### Formats
+
+CSV is used for raw data because it is portable and human-readable.
+
+Parquet is used for processed data because it preserves data types and provides efficient columnar storage.
+
+### Environment Variables
+
+Storage paths are configured in `.env`:
+
+```text
+DATA_DIR_RAW=data/raw
+DATA_DIR_PROCESSED=data/processed
