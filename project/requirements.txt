@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scipy
+statsmodels
+scikit-learn
+joblib
+python-dotenv
+flask
+requests
+openpyxl
+xlrd
